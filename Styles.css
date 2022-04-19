@@ -21,6 +21,24 @@ header img {
   margin-top: 10%;
 }
 
+#location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background: lightgray;
+}
+
+#location p {
+  margin-left: 5%;
+}
+
 #description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,9 +54,15 @@ header img {
   background-color: #f2f2f2;
 }
 
-#description h1 p {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+#description h1 {
+  margin-bottom: 4%;
+  padding-top: 5%;
+  font-size: 24px;
+}
+
+#description p {
+  margin-top: 0;
+  font-size: 18px;
 }
 
 #fonctionnement {
@@ -53,47 +77,32 @@ header img {
   padding: 0 5%;
 }
 
-.btn--margin {
-  margin-bottom: 25px;
-}
-
-.btn--height {
-  height: 60px;
+#fonctionnement h2 {
+  margin-top: 12%;
 }
 
 .btn--menu {
   height: 5vh;
   width: 20vh;
-}
-
-.btn--border {
-  border-radius: 20px;
+  background: linear-gradient(355deg, #9356DC, #FF79DA);
   border: none;
+  border-radius: 25px;
+  margin-bottom: 15%;
 }
 
-.btn--grey {
-  background-color: #f2f2f2;
-}
-
-.btn--purplemix {
-  background: #9356DC;
+.btn--fonctionnement {
+  padding: 8%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 5%;
 }
 
 .btn--text {
-  margin-right: 30px;
+  margin-left: 20px;
 }
 
 .btn--wtext {
   color: white;
-}
-
-.btn:hover {
-  background-color: #F5EDFF;
-}
-
-.btn i {
-  margin-right: 20px;
-  margin-left: 0px;
 }
 
 #restaurants {
@@ -126,6 +135,10 @@ header img {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 2px solid black;
+}
+
+footer {
+  padding-left: 5%;
 }
 
 footer img {

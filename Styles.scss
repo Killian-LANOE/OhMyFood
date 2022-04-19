@@ -15,6 +15,16 @@ header{
         margin-top: 10%;
     }
 }
+#location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: lightgray;
+    p{
+        margin-left: 5%;
+    }
+}
 
 #description{
     display: flex;
@@ -22,10 +32,15 @@ header{
     text-align: center;
     align-items: center;
     background-color: #f2f2f2;
-    h1 p{
-        flex-wrap: wrap;
+    h1{
+        margin-bottom: 4%;
+        padding-top: 5%;
+        font-size: 24px;
     }
-
+    p{
+        margin-top: 0;
+        font-size: 18px;
+    }
 }
 
 #fonctionnement{
@@ -33,44 +48,35 @@ header{
     flex-direction: column;
     margin-bottom: 20px;
     padding: 0 5%;
+    h2{
+        margin-top: 12%;
+    }
 }
+
 .btn{
     
-    &--margin{
-        margin-bottom: 25px;
-    }
-    &--height{
-        height: 60px;
-    }
     &--menu{
         height: 5vh;
         width: 20vh;
-    }
-    &--border{
-        border-radius: 20px;
+        background: linear-gradient(355deg, $color-primary,$color-secondary);
         border: none;
+        border-radius: 25px;
+        margin-bottom: 15%;
     }
-    &--grey{
-        background-color: #f2f2f2;
-    }
-    &--purplemix{
-        background: $color-primary;
+
+    &--fonctionnement{
+        padding: 8%;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 5%;
     }
     &--text{
-        margin-right: 30px;
+        margin-left: 20px;
     }
+    
     &--wtext{
         color: white;
     }
-   
-    &:hover{
-        background-color: #F5EDFF;
-    }
-    i{
-        margin-right: 20px;
-        margin-left: 0px;
-    }
-
 }
 
 #restaurants{
@@ -104,6 +110,7 @@ header{
     
 
 footer{
+    padding-left: 5%;
 
     img{
         height: 18px;
