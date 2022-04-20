@@ -36,7 +36,7 @@ header img {
 }
 
 #location p {
-  margin-left: 5%;
+  margin-left: 15px;
 }
 
 #description {
@@ -93,7 +93,7 @@ header img {
 .btn--fonctionnement {
   padding: 8%;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 5%;
 }
 
@@ -134,7 +134,28 @@ header img {
   background-color: #fff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: 2px solid black;
+  border: 2px solid #fff;
+  margin-top: -5px;
+}
+
+.restaurants__cartes__description h3 {
+  margin: 12px 0 6px 10px;
+}
+
+.restaurants__cartes__description p {
+  margin: 0 0 0 10px;
+}
+
+.coeurs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: -40px 8% 30px 0;
+  font-size: 22px;
 }
 
 footer {
