@@ -1,0 +1,25 @@
+.btn{
+    
+    &--menu{
+        height: 5vh;
+        width: 20vh;
+        background: linear-gradient(355deg, $color-primary,$color-secondary);
+        border: none;
+        border-radius: 25px;
+        margin-bottom: 15%;
+    }
+
+    &--fonctionnement{
+        padding: 8%;
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 5%;
+    }
+    &--text{
+        margin-left: 20px;
+    }
+    
+    &--wtext{
+        color: white;
+    }
+}
