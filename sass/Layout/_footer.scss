@@ -1,10 +1,11 @@
 footer{
     padding-left: 5%;
-    background-color: grey;
+    background-color: $color-darkgray;
 
     img{
         height: 18px;
         width: auto;  
+        color: white;
     }
     ul{
         display: contents;
@@ -14,7 +15,8 @@ footer{
         color: $color-white;
     }
     i{
-        margin-right: 10px;
+        margin-right: 6px;
         font-size: 10px;
+        width: 12px ;
     }
 }
