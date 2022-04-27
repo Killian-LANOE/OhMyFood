@@ -11,12 +11,15 @@ body {
 .btn--menu {
   height: 5vh;
   width: 20vh;
-  background: linear-gradient(355deg, #9356DC, #FF79DA);
   border: none;
   border-radius: 25px;
-  margin-bottom: 15%;
+  margin-bottom: 6vh;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn--gradient {
+  background: linear-gradient(355deg, #9356DC, #FF79DA);
 }
 
 .btn--fonctionnement {
@@ -27,6 +30,12 @@ body {
   background: #F6F6F6;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 95vw;
+}
+
+.btn--margin {
+  margin-top: 3vh;
+  margin-bottom: 7vh;
 }
 
 .btn--text {
@@ -39,6 +48,11 @@ body {
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
 }
 
 header {
@@ -54,13 +68,6 @@ header {
           align-items: center;
 }
 
-header img {
-  height: 3.3vh;
-  width: auto;
-  margin-top: 8%;
-  margin-bottom: 4%;
-}
-
 #logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,6 +76,109 @@ header img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+}
+
+#logo img {
+  height: 3.3vh;
+  width: auto;
+  margin-top: 8%;
+  margin-bottom: 4%;
+}
+
+#background__restaurant {
+  background-image: url(../../images/restaurants/a_la_francaise.jpg);
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+}
+
+#background__restaurant img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 3.3vh;
+  width: 100%;
+  display: none;
+}
+
+#block_pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F2F2;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: -50px;
+  position: relative;
+}
+
+.entrees p, .plats p, .desserts p {
+  -webkit-text-decoration: underline #99E2D0 4px;
+          text-decoration: underline #99E2D0 4px;
+  text-underline-offset: 6px;
+  margin-bottom: 22px;
+}
+
+.nom_restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-left: 8%;
+}
+
+.nom_restaurant h1 {
+  margin-right: 22vw;
+}
+
+.nom_restaurant i {
+  font-size: 20px;
+}
+
+.menu {
+  border: 2px solid #fff;
+  width: 90vw;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.menu h2 {
+  margin: 10px 10px 6px 10px;
+  font-size: 16px;
+}
+
+.menu p {
+  margin: 0px 10px 10px 10px;
+  width: 100%;
+  height: 16px;
+  font-size: 13.5px;
+  text-decoration: none;
+}
+
+.prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: -24px;
+  margin-right: 5vw;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
 #location {
@@ -104,6 +214,7 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   background-color: #F6F6F6;
+  width: 100%;
 }
 
 #description h1 {
@@ -127,18 +238,25 @@ header img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
-  padding: 0 5%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #fonctionnement h2 {
   margin-top: 12%;
+  width: 95vw;
 }
 
 #restaurants {
   display: -ms-grid;
   display: grid;
   background-color: #F6F6F6;
-  padding-left: 5%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #restaurants h3 {
@@ -156,7 +274,7 @@ header img {
 
 .restaurants__cartes {
   margin-bottom: 20px;
-  width: 95%;
+  width: 95vw;
   border-radius: 20px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -187,23 +305,28 @@ header img {
 }
 
 footer {
-  padding-left: 5%;
+  padding-left: 8%;
   background-color: #353535;
+  width: 100%;
 }
 
 footer img {
   height: 18px;
   width: auto;
-  color: white;
+  margin-top: 25px;
+  margin-bottom: 8px;
 }
 
 footer ul {
-  display: contents;
+  padding: 0 0 20px 0;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 footer li {
   list-style-type: none;
   color: #fff;
+  padding-bottom: 8px;
 }
 
 footer i {

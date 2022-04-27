@@ -3,13 +3,14 @@
     &--menu{
         height: 5vh;
         width: 20vh;
-        background: linear-gradient(355deg, $color-primary,$color-secondary);
         border: none;
         border-radius: 25px;
-        margin-bottom: 15%;
+        margin-bottom: 6vh;
         @include box-shadow;
     }
-
+    &--gradient{
+        background: linear-gradient(355deg, $color-primary,$color-secondary);
+    }
     &--fonctionnement{
         padding: 8%;
         border: none;
@@ -17,11 +18,16 @@
         margin-bottom: 5%;
         background: $color-lightgray;
         @include box-shadow;
+        width: 95vw;
+    }
+    &--margin{
+        margin-top: 3vh;
+        margin-bottom: 7vh;
     }
     &--text{
         margin-left: 20px;
     }
-    
+
     &--wtext{
         color: white;
     }

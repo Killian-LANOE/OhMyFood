@@ -1,0 +1,32 @@
+#block_pages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-gray;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: -50px;
+    position: relative;
+}
+
+.entrees, .plats, .desserts{
+    p{
+        text-decoration: underline $color-tertiary 4px;
+        text-underline-offset: 6px;
+        margin-bottom: 22px;
+    }
+
+}
+
+.nom_restaurant{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 8%;
+    h1{
+        margin-right: 22vw;
+    }
+    i{
+        font-size: 20px;
+    }
+}

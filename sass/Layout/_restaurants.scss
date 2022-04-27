@@ -1,7 +1,8 @@
 #restaurants{
     display: grid;
     background-color: $color-lightgray;
-    padding-left:  5%;
+    width: 100%;
+    justify-content: center;
     h3{
         font-size: 20px;
     }
@@ -16,17 +17,15 @@
 
 .restaurants__cartes{ 
     margin-bottom: 20px;
-    width: 95%;
+    width: 95vw;
     border-radius: 20px;
     @include box-shadow;
-    
     &__description{
         background-color: $color-white;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border: 2px solid $color-white;
         margin-top: -5px ;
-
         h3{
             margin: 12px 0 6px 10px;
         }

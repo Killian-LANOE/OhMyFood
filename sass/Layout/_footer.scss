@@ -1,18 +1,23 @@
 footer{
-    padding-left: 5%;
+    padding-left: 8%;
     background-color: $color-darkgray;
+    width: 100%;
 
     img{
         height: 18px;
-        width: auto;  
-        color: white;
+        width: auto;
+        margin-top: 25px;
+        margin-bottom: 8px;
     }
     ul{
-        display: contents;
+        padding: 0 0 20px 0;
+        margin-top: 6px;
+        margin-bottom: 0;
     }
     li{
         list-style-type: none;
         color: $color-white;
+        padding-bottom: 8px;
     }
     i{
         margin-right: 6px;
