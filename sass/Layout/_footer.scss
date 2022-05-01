@@ -1,27 +1,29 @@
-footer{
+footer {
     padding-left: 8%;
     background-color: $color-darkgray;
     width: 100%;
 
-    img{
+    img {
         height: 18px;
         width: auto;
         margin-top: 25px;
         margin-bottom: 8px;
     }
-    ul{
+    ul {
         padding: 0 0 20px 0;
         margin-top: 6px;
         margin-bottom: 0;
-    }
-    li{
-        list-style-type: none;
-        color: $color-white;
-        padding-bottom: 8px;
-    }
-    i{
-        margin-right: 6px;
-        font-size: 10px;
-        width: 12px ;
+
+        li {
+            list-style-type: none;
+            color: $color-white;
+            padding-bottom: 8px;
+            
+            i {
+                margin-right: 6px;
+                font-size: 10px;
+                width: 12px;
+            }
+        }
     }
 }

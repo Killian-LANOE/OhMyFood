@@ -1,5 +1,5 @@
 .btn{
-    
+
     &--menu{
         height: 5vh;
         width: 20vh;
@@ -8,17 +8,21 @@
         margin-bottom: 6vh;
         @include box-shadow;
     }
+
     &--gradient{
         background: linear-gradient(355deg, $color-primary,$color-secondary);
     }
     &--fonctionnement{
-        padding: 8%;
+        padding: 20px;
         border: none;
         border-radius: 20px;
         margin-bottom: 5%;
         background: $color-lightgray;
         @include box-shadow;
-        width: 95vw;
+        width: 100%;
+        &:hover{
+            background-color: $color-primary-hover
+        }
     }
     &--margin{
         margin-top: 3vh;

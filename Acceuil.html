@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="public/css/Styles.css">
+    <link rel="stylesheet" href="/public/css/Styles.css">
 </head>
+
 <body>
 
     <header> 
@@ -26,30 +27,43 @@
 
         <section id="fonctionnement">
             <h2>Fonctionnement</h2>
-            <button class="btn btn--fonctionnement btn--background"><i class="fa-solid fa-mobile-screen-button"></i><span class="btn--text">Choisissez un restaurant</span></button>
-            <button class="btn btn--fonctionnement btn--background"><i class="fa-solid fa-list"></i><span class="btn--text">Composez votre menu</span></button>
-            <button class="btn btn--fonctionnement btn--background"><i class="fa-solid fa-store"></i><span class="btn--text">Dégustez au restaurant</span></button>
+            <button class="btn btn--fonctionnement btn--background">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span class="btn--text">Choisissez un restaurant</span>
+            </button>
+
+            <button class="btn btn--fonctionnement btn--background">
+                <i class="fa-solid fa-list"></i>
+                <span class="btn--text">Composez votre menu</span>
+            </button>
+            
+            <button class="btn btn--fonctionnement btn--background">
+                <i class="fa-solid fa-store"></i>
+                <span class="btn--text">Dégustez au restaurant</span>
+            </button>
         </section>
 
         <section id="restaurants">
             <h2>Restaurants</h2>
             
-            <a href="#">
+            <a href="../P3_ohmyfood_Killian_Lanoe/html/palette.html">
                 <article class="restaurants__cartes"><img src="images/restaurants/la_palette_du_gout.jpg" alt="la palette du goût">
                     <div class="restaurants__cartes__description">
                         <h3>La palette du goût</h3>
                         <p>Ménilomontant</p>
-                        <span class="coeurs"><i class="fa-regular fa-heart"></i></span>
+                        <span class="coeur"><i class="fa-regular fa-heart"></i></span>
                     </div>
                 </article>
             </a>
 
-            <a href="#">
-                <article class="restaurants__cartes"><img src="images/restaurants/la_note_enchantee.jpg" alt="la note enchantée">
+            <a href="html/note.html">
+                <article class="restaurants__cartes">
+                    <img src="images/restaurants/la_note_enchantee.jpg" alt="la note enchantée">
+
                     <div class="restaurants__cartes__description">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                        <span class="coeurs"><i class="fa-regular fa-heart"></i></span>
+                        <div><h3>La note enchantée</h3>
+                        <p>Charonne</p></div>
+                     <div><span class="coeur"><i class="fa-regular fa-heart"></i></span></div>
                     </div>
                 </article>
             </a>
@@ -59,17 +73,17 @@
                     <div class="restaurants__cartes__description">
                         <h3>À la française</h3>
                         <p>Cité Rouge</p>
-                        <span class="coeurs"><i class="fa-regular fa-heart"></i></span>
+                        <span class="coeur"><i class="fa-regular fa-heart"></i></span>
                     </div>
                 </article>
             </a>
 
-            <a href="#">
+            <a href="../P3_ohmyfood_Killian_Lanoe/html/delice.html">
                 <article class="restaurants__cartes"><img src="images/restaurants/le_delice_des_sens.jpg" alt="le délice des sens">
                     <div class="restaurants__cartes__description">
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
-                        <span class="coeurs"><i class="fa-regular fa-heart"></i></span>
+                        <span class="coeur"><i class="fa-regular fa-heart"></i></span>
                     </div>
                 </article>
             </a>
