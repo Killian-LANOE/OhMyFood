@@ -1,19 +1,27 @@
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#block_pages{
     background-color: $color-gray;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     margin-top: -50px;
     position: relative;
+    padding: 15px;
 }
 
 .entrees, .plats, .desserts{
-    p{
-        text-decoration: underline $color-tertiary 4px;
-        text-underline-offset: 6px;
-        margin-bottom: 22px;
+    margin-bottom: 50px;
+
+    h2{
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .soulignement{
+        width: 50px;
+        height: 5px;
+        background: $color-tertiary;
+        margin-top: 0;
+        margin-bottom: 18px;
     }
 
 }
@@ -21,45 +29,65 @@ main{
 .nom_restaurant{
     display: flex;
     align-items: center;
-    margin-left: 8%;
-    width: 100%;
 
-    h1{
-        margin-right: 20vw;
-        font-size: 26px;
+        h1{
+            font-size: 24px;
+            width: 70%;
     }
     
-    i{
-        font-size: 20px;
+        .icon{
+            display: flex;
+            font-size: 20px;
+            width: 30%;
+            justify-content: flex-end;
+            padding-right: 15px;
+
     }
 }
 
 .menu{
     border: 2px solid $color-white;
-    width: 90vw;
     margin-bottom: 15px;
     border-radius: 12px;
     background-color: $color-white;
     @include box-shadow;
 
-    h2{
-        margin: 10px 10px 6px 10px;
-        font-size: 16px;
+        &--carte{
+            display: flex;
+            width: 100%;
+
+                &--description{
+                    width: 80%;
+            }
+
+                .prix{
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-end;
+                    font-weight: bold;
+                    padding-right: 10px;
+            }
+        }
+
+
+        h3{
+            margin: 10px 10px 6px 10px;
+            font-size: 15px;
+            max-width: 80%;
 
     }
-    p{
-        margin: 0px 10px 10px 10px;
-        width: 100%;
-        height: 16px;
-        font-size: 13.5px;
-        text-decoration: none;
+
+        p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0 0 10px 10px;
+            font-size: 13.5px;
     }
 }
-    .prix{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: -24px;
-        margin-right: 5vw;
-        padding-bottom: 10px ;
-        font-weight: bold;
+
+#order{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

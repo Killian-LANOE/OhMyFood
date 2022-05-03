@@ -1,11 +1,10 @@
 .btn{
 
     &--menu{
-        height: 5vh;
-        width: 20vh;
+        padding: 16px;
         border: none;
         border-radius: 25px;
-        margin-bottom: 6vh;
+        margin-bottom: 55px;
         @include box-shadow;
     }
 
@@ -16,17 +15,19 @@
         padding: 20px;
         border: none;
         border-radius: 20px;
-        margin-bottom: 5%;
+        margin-bottom: 20px;
         background: $color-lightgray;
         @include box-shadow;
         width: 100%;
         &:hover{
-            background-color: $color-primary-hover
+            background-color: $color-primary-hover;
+            i{
+                color: $color-primary;
+            }
         }
     }
-    &--margin{
-        margin-top: 3vh;
-        margin-bottom: 7vh;
+    &--order{
+        padding: 14px 40px;
     }
     &--text{
         margin-left: 20px;
@@ -34,5 +35,6 @@
 
     &--wtext{
         color: white;
+        font-size: 14.5px;
     }
 }
