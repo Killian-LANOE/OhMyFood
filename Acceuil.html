@@ -14,7 +14,7 @@
     <header> 
         <div id="logo"><img src="images/logo/ohmyfood.svg" alt="Logo_ohmyfood"></div>
         <div id="location">
-            <i class="fa-solid fa-location-dot"></i><p>Paris,Belleville</p>
+            <i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p>
         </div>
     </header>
 
@@ -24,7 +24,7 @@
             <p>Découvrez des restaurants d'exception,<br> séléctionnés par nos soins.</p>
             
             <form action="#restaurants">
-                <button class="btn btn--menu btn--gradient"><span class="btn--wtext">Explorer nos restaurants</span></button>
+                <button class="btn btn--menu btn--gradient btn--margin"><span class="text--white">Explorer nos restaurants</span></button>
             </form>
 
         </section>
@@ -33,17 +33,20 @@
             <h2>Fonctionnement</h2>
             <button class="btn btn--fonctionnement btn--background">
                 <i class="fa-solid fa-mobile-screen-button"></i>
-                <span class="btn--text">Choisissez un restaurant</span>
+                <span class="text">Choisissez un restaurant</span>
+                <span class="numero">1</span>
             </button>
 
             <button class="btn btn--fonctionnement btn--background">
                 <i class="fa-solid fa-list"></i>
-                <span class="btn--text">Composez votre menu</span>
+                <span class="text">Composez votre menu</span>
+                <span class="numero">2</span>
             </button>
             
             <button class="btn btn--fonctionnement btn--background">
                 <i class="fa-solid fa-store"></i>
-                <span class="btn--text">Dégustez au restaurant</span>
+                <span class="text">Dégustez au restaurant</span>
+                <span class="numero">3</span>
             </button>
         </section>
 
@@ -52,7 +55,11 @@
             
             <a href="restaurants/palette.html"">
                 <article class="restaurants__cartes">
-                    <img src="images/restaurants/la_palette_du_gout.jpg" alt="la palette du goût">
+
+                    <div class="restaurants__cartes__img">
+                        <img src="images/restaurants/la_palette_du_gout.jpg" alt="la palette du goût">
+                        <div class="nouveau"><p>Nouveau</p></div>
+                    </div>
 
                     <div class="restaurants__cartes__description">
                         <div>
@@ -68,7 +75,11 @@
 
             <a href="restaurants/note.html">
                 <article class="restaurants__cartes">
-                    <img src="images/restaurants/la_note_enchantee.jpg" alt="la note enchantée">
+
+                    <div class="restaurants__cartes__img">
+                        <img src="images/restaurants/la_note_enchantee.jpg" alt="la note enchantée">
+                        <div class="nouveau"><p>Nouveau</p></div>
+                    </div>
 
                     <div class="restaurants__cartes__description">
                         <div>
@@ -123,7 +134,7 @@
             <a href="#"><li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li></a>
             <a href="#"><li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li></a>
             <a href="#"><li>Mention légales</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="mailto:ohmyfood@gmail.com"><li>Contact</li></a>
         </ul>
 
     </footer>

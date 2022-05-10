@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Shrikhand&display=swap'); // Shrikhand //
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto&family=Shrikhand&display=swap'); // Roboto //
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Shrikhand&display=swap"); // Shrikhand //
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto&family=Shrikhand&display=swap"); // Roboto //
 
-body{
+h1,h2,h3,p,li {
     font-family: "Roboto", sans-serif;
 }
 
-.btn{
-    &--text{
-        font-family: "Roboto", sans-serif;
+.prix {
+    font-family: sans-serif;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+}
+
+.nom_restaurant {
+    
+    h1 {
+        font-family: "Shrikhand", sans-serif;
     }
 }

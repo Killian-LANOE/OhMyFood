@@ -1,17 +1,29 @@
-.btn{
+.btn {
+    &--acceuil {
+        background: $color-white;
+        border: none;
+        position: absolute;
+        font-size: 20px;
+        left: 13px;
+        top: 27px;
+    }
 
-    &--menu{
+    &--menu {
         padding: 16px;
         border: none;
         border-radius: 25px;
-        margin-bottom: 55px;
         @include box-shadow;
     }
 
-    &--gradient{
-        background: linear-gradient(355deg, $color-primary,$color-secondary);
+    &--margin {
+        margin-bottom: 55px;
     }
-    &--fonctionnement{
+
+    &--gradient {
+        background: linear-gradient(355deg, $color-primary, $color-secondary);
+    }
+
+    &--fonctionnement {
         padding: 20px;
         border: none;
         border-radius: 20px;
@@ -19,21 +31,49 @@
         background: $color-lightgray;
         @include box-shadow;
         width: 100%;
-        &:hover{
-            background-color: $color-primary-hover;
-            i{
-                color: $color-primary;
+        position: relative;
+
+            i {
+                position: absolute;
+                display: flex;
+                font-size: 15px;
+                left: 32px;
+            }
+
+            .numero {
+                position: absolute;
+                display: flex;
+                left: -8px;
+                top: 18px;
+                font-size: 13px;
+                background: $color-primary;
+                color: $color-white;
+                padding: 4px 8px;
+                border-radius: 25px;
+            }
+
+            &:hover {
+                background-color: $color-primary-hover;
+
+                    i {
+                        color: $color-primary;
+                }
             }
         }
-    }
-    &--order{
+
+    &--order {
         padding: 14px 40px;
     }
-    &--text{
-        margin-left: 20px;
-    }
 
-    &--wtext{
+    &--wtext {
+        color: white;
+        font-size: 14.5px;
+    }
+}
+
+.text {
+    
+    &--white {
         color: white;
         font-size: 14.5px;
     }

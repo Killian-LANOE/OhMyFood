@@ -2,8 +2,11 @@ $color-primary: #9356DC;
 $color-primary-hover: lighten($color-primary, 36%);
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-tertiary-text: darken($color-tertiary, 40%);
 $color-white: #fff;
 $color-gray: #F2F2F2;
 $color-lightgray: #F6F6F6;
 $color-darkgray: #353535;
+
+
 
