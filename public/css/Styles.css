@@ -214,7 +214,8 @@ header #logo img {
 }
 
 #fonctionnement {
-  margin: 35px 25px 35px 25px;
+  padding: 35px 25px 35px 25px;
+  background: #fff;
 }
 
 #fonctionnement h2 {
@@ -246,6 +247,7 @@ header #logo img {
   border-radius: 20px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
 }
 
 .restaurants__cartes__img {
@@ -283,40 +285,83 @@ header #logo img {
   padding-bottom: 10px;
 }
 
-.restaurants__cartes__description .coeur {
-  position: relative;
-}
-
-.restaurants__cartes__description .coeur--pos {
+.restaurants__cartes .coeur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  height: 24px;
+  width: 24px;
   right: 22px;
-  bottom: 5px;
-  font-size: 22px;
+  bottom: 36px;
+  border: none;
+  font-size: 25.5px;
+  background: transparent;
+}
+
+.restaurants__cartes .coeur:hover {
+  -webkit-clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+          clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
+}
+
+.restaurants__cartes .coeur:hover i {
+  visibility: hidden;
+}
+
+.restaurants__cartes .coeur i {
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+}
+
+@media screen and (min-width: 992px) {
+  .restaurants__block__cartes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .restaurants__cartes {
+    width: 88%;
+  }
+  .btn--fonctionnement {
+    width: 30%;
+    margin-right: 14px;
+    margin-left: 14px;
+  }
+  #fonctionnement h2 {
+    margin-top: 10px;
+  }
 }
 
 #block_pages {
   background-color: #F2F2F2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  margin-top: -50px;
+  margin-top: -30px;
   position: relative;
   padding: 15px;
 }
 
-.entrees, .plats, .desserts {
+.entrees,
+.plats,
+.desserts {
   margin-bottom: 50px;
 }
 
-.entrees h2, .plats h2, .desserts h2 {
+.entrees h2,
+.plats h2,
+.desserts h2 {
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: 100;
 }
 
-.entrees .soulignement, .plats .soulignement, .desserts .soulignement {
+.entrees .soulignement,
+.plats .soulignement,
+.desserts .soulignement {
   width: 50px;
   height: 5px;
   background: #99E2D0;
@@ -342,20 +387,19 @@ header #logo img {
 }
 
 .nom_restaurant .icon {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  right: 11px;
-  top: 37px;
+  height: 24px;
+  width: 24px;
+  font-size: 23px;
 }
 
-.nom_restaurant .icon--plein {
-  color: white;
+.nom_restaurant .icon:hover {
+  -webkit-clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+          clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
 }
 
-.menu > .validation:hover {
-  -webkit-transform: translateX(40px);
-          transform: translateX(40px);
+.nom_restaurant .icon:hover i {
+  visibility: hidden;
 }
 
 .menu {
@@ -369,19 +413,74 @@ header #logo img {
           animation: chargement 800ms both;
 }
 
-.menu:hover .prix {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
+.menu--carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.menu--carte--description {
+  width: 80%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.menu--carte .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: bold;
+  padding-right: 10px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   -webkit-transition: -webkit-transform 300ms ease;
   transition: -webkit-transform 300ms ease;
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
 
+.menu--carte .validation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  position: absolute;
+  top: -2px;
+  font-size: 25px;
+  height: 64px;
+  width: 60px;
+  background-color: #99E2D0;
+  color: #fff;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
 .menu:hover .menu--carte--description {
   width: 65%;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+}
+
+.menu:hover .prix {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
 }
 
 .menu:hover .validation {
@@ -394,8 +493,8 @@ header #logo img {
 .menu:hover .validation i {
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .menu:nth-child(3) {
@@ -432,51 +531,6 @@ header #logo img {
   font-size: 13.5px;
 }
 
-.menu--carte {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.menu--carte .validation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 25px;
-  height: 60px;
-  width: 60px;
-  -webkit-transform: translate(60px);
-          transform: translate(60px);
-  background-color: #99E2D0;
-  color: #fff;
-}
-
-.menu--carte--description {
-  width: 80%;
-}
-
-.menu--carte .prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-weight: bold;
-  padding-right: 10px;
-}
-
 #order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,6 +539,32 @@ header #logo img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 426px) {
+  .background {
+    -o-object-position: 0px 62%;
+       object-position: 0px 62%;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .entrees, .plats, .desserts {
+    width: 30%;
+  }
+  .block_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .background {
+    -o-object-position: 0px 65%;
+       object-position: 0px 65%;
+  }
 }
 
 footer {
@@ -510,6 +590,10 @@ footer ul li {
   list-style-type: none;
   color: #fff;
   padding-bottom: 8px;
+}
+
+footer ul li a {
+  color: white;
 }
 
 footer ul li i {
