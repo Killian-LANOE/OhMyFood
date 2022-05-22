@@ -36,24 +36,6 @@
         font-size: 21px;
         width: 70%;
     }
-
-    .icon {
-        height: 24px;
-        width: 24px;
-        font-size: 23px;
-
-        &:hover {
-            clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
-            background: linear-gradient(350deg, $color-primary, $color-secondary);
-
-            i{
-                visibility: hidden;
-            }
-        }
-
-
-
-    }
 }
 
 .menu {
@@ -101,7 +83,7 @@
         } 
     }
 
-    &:hover {
+    &:hover, &:active {
         .menu--carte--description {
             width: 65%;
             transition: all 300ms ease;
