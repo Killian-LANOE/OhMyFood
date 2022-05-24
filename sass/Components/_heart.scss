@@ -13,14 +13,25 @@
         }
     }
 
+    &--restaurants {
+        &:hover {
+            .fa-solid {
+                position: absolute;
+                top: 35px;
+            }
+        }
+    }
+
     &:hover,
     &:active {
         .fa-solid {
             display: block;
+            animation: coeur 1.5s both;
         }
 
         .fa-regular {
             opacity: 0;
+            transition: all 300ms;
         }
     }
 }
