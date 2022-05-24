@@ -67,7 +67,7 @@ a {
 }
 
 .btn--gradient {
-  background: linear-gradient(355deg, #9356DC, #FF79DA);
+  background: linear-gradient(355deg, #9356dc, #ff79da);
 }
 
 .btn--fonctionnement {
@@ -75,7 +75,7 @@ a {
   border: none;
   border-radius: 20px;
   margin-bottom: 20px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 100%;
@@ -99,7 +99,7 @@ a {
   left: -8px;
   top: 18px;
   font-size: 13px;
-  background: #9356DC;
+  background: #9356dc;
   color: #fff;
   padding: 4px 8px;
   border-radius: 25px;
@@ -110,7 +110,7 @@ a {
 }
 
 .btn--fonctionnement:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .btn--order {
@@ -138,7 +138,7 @@ a {
 }
 
 .icon .fa-solid::before {
-  background: -webkit-linear-gradient(350deg, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(350deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -148,7 +148,7 @@ a {
 }
 
 .icon:hover .fa-regular, .icon:active .fa-regular {
-  display: none;
+  opacity: 0;
 }
 
 header {
@@ -199,7 +199,7 @@ header #logo img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background: #F2F2F2;
+  background: #f2f2f2;
   -webkit-box-shadow: black 0px 26px 22px -38px inset;
           box-shadow: black 0px 26px 22px -38px inset;
 }
@@ -211,7 +211,7 @@ header #logo img {
 
 #description {
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -241,7 +241,7 @@ header #logo img {
 #restaurants {
   display: -ms-grid;
   display: grid;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 25px 20px 45px 20px;
 }
 
@@ -285,7 +285,7 @@ header #logo img {
 }
 
 .restaurants__block__cartes .restaurants__cartes__img .nouveau p {
-  background: #99E2D0;
+  background: #99e2d0;
   padding: 8px;
   font-size: 15px;
   font-weight: bold;
@@ -345,7 +345,7 @@ header #logo img {
 }
 
 #block_pages {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   margin-top: -30px;
@@ -372,7 +372,7 @@ header #logo img {
 .desserts .soulignement {
   width: 50px;
   height: 5px;
-  background: #99E2D0;
+  background: #99e2d0;
   margin-top: 0;
   margin-bottom: 18px;
 }
@@ -401,8 +401,8 @@ header #logo img {
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
-  -webkit-animation: chargement 800ms both;
-          animation: chargement 800ms both;
+  -webkit-animation: chargement 600ms both;
+          animation: chargement 600ms both;
 }
 
 .menu--carte {
@@ -452,7 +452,7 @@ header #logo img {
   font-size: 25px;
   height: 64px;
   width: 60px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #fff;
   -webkit-transform: translateX(60px);
           transform: translateX(60px);
@@ -542,7 +542,9 @@ header #logo img {
 }
 
 @media screen and (min-width: 920px) {
-  .entrees, .plats, .desserts {
+  .entrees,
+  .plats,
+  .desserts {
     width: 30%;
   }
   .block_menu {

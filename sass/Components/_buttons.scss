@@ -33,33 +33,33 @@
         width: 100%;
         position: relative;
 
+        i {
+            position: absolute;
+            display: flex;
+            font-size: 15px;
+            left: 32px;
+        }
+
+        .numero {
+            position: absolute;
+            display: flex;
+            left: -8px;
+            top: 18px;
+            font-size: 13px;
+            background: $color-primary;
+            color: $color-white;
+            padding: 4px 8px;
+            border-radius: 25px;
+        }
+
+        &:hover {
+            background-color: $color-primary-hover;
+
             i {
-                position: absolute;
-                display: flex;
-                font-size: 15px;
-                left: 32px;
-            }
-
-            .numero {
-                position: absolute;
-                display: flex;
-                left: -8px;
-                top: 18px;
-                font-size: 13px;
-                background: $color-primary;
-                color: $color-white;
-                padding: 4px 8px;
-                border-radius: 25px;
-            }
-
-            &:hover {
-                background-color: $color-primary-hover;
-
-                    i {
-                        color: $color-primary;
-                }
+                color: $color-primary;
             }
         }
+    }
 
     &--order {
         padding: 14px 40px;
@@ -72,7 +72,6 @@
 }
 
 .text {
-    
     &--white {
         color: white;
         font-size: 14.5px;

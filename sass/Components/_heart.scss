@@ -3,24 +3,24 @@
     width: 24px;
     font-size: 23px;
 
-    .fa-solid{
+    .fa-solid {
         display: none;
-        
-        &::before{
+
+        &::before {
             background: -webkit-linear-gradient(350deg, $color-primary, $color-secondary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
 
-    &:hover, &:active {
-
-        .fa-solid{
+    &:hover,
+    &:active {
+        .fa-solid {
             display: block;
         }
 
-        .fa-regular{
-            display: none;
+        .fa-regular {
+            opacity: 0;
         }
     }
 }

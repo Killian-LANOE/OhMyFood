@@ -59,90 +59,84 @@
     }
 }
 
-.restaurants__block__cartes{
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 30px;
+.restaurants__block__cartes {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
 
-        .restaurants__cartes {
-            border-radius: 20px;
-            @include box-shadow;
+    .restaurants__cartes {
+        border-radius: 20px;
+        @include box-shadow;
+        position: relative;
+        width: 100%;
+
+        &__img {
             position: relative;
-            width: 100%;
-        
-            &__img {
-                position: relative;
-        
-                .nouveau {
-                    position: absolute;
-                    top: -3px;
-                    right: 9px;
-        
-                    p {
-                        background: $color-tertiary;
-                        padding: 8px;
-                        font-size: 15px;
-                        font-weight: bold;
-                        color: $color-tertiary-text;
-                    }
-                }
-            }
-        
-            &__description {
-                background-color: $color-white;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                border: 2px solid $color-white;
-                margin-top: -5px;
-        
-                h3 {
-                    margin: 12px 0 6px 10px;
-                }
-        
-                p {
-                    margin: 0 0 0 10px;
-                    padding-bottom: 10px;
-                }    
-            }
-            
-            .icon {
-                display: flex;
+
+            .nouveau {
                 position: absolute;
-                height: 24px;
-                width: 24px;
-                right: 22px;
-                bottom: 36px;
-                font-size: 25.5px;      
-        
-                i{
-                    position: absolute;
-                    left: -1px;
-                    bottom: -1px;
+                top: -3px;
+                right: 9px;
+
+                p {
+                    background: $color-tertiary;
+                    padding: 8px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: $color-tertiary-text;
                 }
             }
         }
+
+        &__description {
+            background-color: $color-white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: 2px solid $color-white;
+            margin-top: -5px;
+
+            h3 {
+                margin: 12px 0 6px 10px;
+            }
+
+            p {
+                margin: 0 0 0 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .icon {
+            display: flex;
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            right: 22px;
+            bottom: 36px;
+            font-size: 25.5px;
+
+            i {
+                position: absolute;
+                left: -1px;
+                bottom: -1px;
+            }
+        }
+    }
 }
 
-
-
-@media screen and (min-width:992px) {
-    
-    .restaurants__block__cartes{
+@media screen and (min-width: 992px) {
+    .restaurants__block__cartes {
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;
     }
 
-    .btn--fonctionnement{
+    .btn--fonctionnement {
         width: 30%;
         margin-right: 14px;
         margin-left: 14px;
     }
-    #fonctionnement{
-
-        h2{
+    #fonctionnement {
+        h2 {
             margin-top: 10px;
         }
     }
-
-
 }
