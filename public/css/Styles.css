@@ -3,6 +3,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 1;
 }
 
 body {
@@ -40,8 +41,6 @@ a {
 @-webkit-keyframes coeur {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0, 20);
-            transform: translate(0, 20);
   }
   100% {
     opacity: 1;
@@ -51,11 +50,53 @@ a {
 @keyframes coeur {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0, 20);
-            transform: translate(0, 20);
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    z-index: -2;
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    z-index: -2;
+  }
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: -1;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: -1;
   }
 }
 
@@ -67,7 +108,7 @@ a {
   font-family: "Shrikhand", sans-serif;
 }
 
-.btn--acceuil {
+.btn--accueil {
   background: #fff;
   border: none;
   position: absolute;
@@ -228,6 +269,35 @@ header #logo img {
   height: 230px;
 }
 
+.loader {
+  z-index: 3;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 50px;
+  left: 43%;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-bottom-color: #9356dc;
+  -webkit-animation: loading 800ms linear 3 both;
+          animation: loading 800ms linear 3 both;
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  -webkit-animation: apparition 500ms 2s both;
+          animation: apparition 500ms 2s both;
+}
+
 #location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +435,12 @@ header #logo img {
   position: absolute;
   left: -1px;
   bottom: -1px;
+}
+
+@media screen and (min-width: 768px) {
+  .loader {
+    left: 48%;
+  }
 }
 
 @media screen and (min-width: 992px) {
