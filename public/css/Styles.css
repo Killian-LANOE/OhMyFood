@@ -386,6 +386,7 @@ header #logo img {
 
 .restaurants__block__cartes .restaurants__cartes__img {
   position: relative;
+  margin: 0;
 }
 
 .restaurants__block__cartes .restaurants__cartes__img .nouveau {
